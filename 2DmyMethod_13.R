@@ -198,7 +198,7 @@ vecInputTensor=as.vector(InputTensor);vecInputTensor;
 nodes1stLayer=length(vecInputTensor);nodes1stLayer;  ##200*200=40,000.
 
 ##(step2) Calculate the number of nodes in the second Layer (sop layer)
-nodes2ndLayer=pf1_1*pf1_2+pf2_1*pf2_2+pf3_1*pf3_2+pf4_1*pf4_2;nodes2ndLayer;#4 kernels, in total (65*39)*4=10,140.
+nodes2ndLayer=pf1_1*pf1_2+pf2_1*pf2_2+pf3_1*pf3_2+pf4_1*pf4_2;nodes2ndLayer;
 
 ##(step3) Linearize the kernels/filters;
 LinF1=as.vector(F1);LinF2=as.vector(F2);LinF3=as.vector(F3);LinF4=as.vector(F4);
@@ -289,4 +289,5 @@ imageShow(MA4);
 F1;F2;F3;F4;
 Puppy_G=Puppy[,,2];imageShow(Puppy_G);      
 Puppy_B=Puppy[,,3];imageShow(Puppy_B);      
+
 
